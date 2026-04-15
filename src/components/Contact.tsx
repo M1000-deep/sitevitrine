@@ -44,32 +44,32 @@ export default function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Contactez-Nous
+            Nous Contacter
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Prêt à démarrer votre projet ? Contactez-nous pour un devis gratuit et sans engagement.
+            Discutez de votre projet avec nos experts. Consultation gratuite et sans engagement.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Contact Info */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-gray-900">
             <div className="text-3xl mb-3">📞</div>
-            <h3 className="font-bold text-lg mb-2">Téléphone</h3>
+            <h3 className="font-bold text-lg mb-2 text-gray-900">Téléphone</h3>
             <p className="text-gray-600">+33 (0)4 72 XX XX XX</p>
-            <p className="text-gray-600">Lun - Ven: 8h - 18h</p>
+            <p className="text-sm text-gray-500">Lun - Ven: 8h - 18h</p>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-gray-900">
             <div className="text-3xl mb-3">📧</div>
-            <h3 className="font-bold text-lg mb-2">Email</h3>
+            <h3 className="font-bold text-lg mb-2 text-gray-900">Email</h3>
             <p className="text-gray-600">contact@buildcraft.fr</p>
-            <p className="text-gray-600">Réponse sous 24h</p>
+            <p className="text-sm text-gray-500">Réponse sous 24h</p>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-gray-900">
             <div className="text-3xl mb-3">📍</div>
-            <h3 className="font-bold text-lg mb-2">Adresse</h3>
+            <h3 className="font-bold text-lg mb-2 text-gray-900">Adresse</h3>
             <p className="text-gray-600">123 Avenue de la Construction</p>
             <p className="text-gray-600">69000 Lyon, France</p>
           </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900"
                   placeholder="Jean Dupont"
                 />
               </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900"
                   placeholder="jean@example.com"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900"
                   placeholder="+33 (0)6 XX XX XX XX"
                 />
               </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                   value={formData.projectType}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900"
                 >
                   <option value="">Sélectionner...</option>
                   <option value="construction">Construction Neuve</option>
@@ -162,14 +162,14 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900"
                 placeholder="Décrivez votre projet..."
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition"
+              className="w-full bg-gray-900 text-white font-bold py-3 rounded-lg hover:bg-gray-800 transition"
             >
               Envoyer ma Demande
             </button>

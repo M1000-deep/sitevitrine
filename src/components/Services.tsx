@@ -42,7 +42,7 @@ export default function Services() {
             Nos Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Une gamme complète de services pour tous vos besoins en construction et rénovation.
+            Expertise complète pour la conception, réalisation et suivi de vos projets.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-gray-900 hover:border-gray-700"
             >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>

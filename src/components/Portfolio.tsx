@@ -51,10 +51,10 @@ export default function Portfolio() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nos Réalisations
+            Réalisations Récentes
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Découvrez les projets exceptionnels que nous avons réalisés avec passion et excellence.
+            Portfolio de projets majeurs réalisés avec succès et satisfaction client.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Portfolio() {
               {/* Contenu */}
               <div className="bg-white p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                  <span className="text-sm font-semibold text-gray-700 bg-gray-100 px-3 py-1 rounded-full">
                     {project.category}
                   </span>
                 </div>

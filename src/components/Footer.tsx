@@ -10,10 +10,10 @@ export default function Footer() {
           {/* Entreprise Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-blue-600 text-white p-2 rounded-lg font-bold">
+              <div className="bg-white text-gray-900 p-2 rounded-lg font-bold">
                 BC
               </div>
-              <span className="font-bold text-lg">BuildCraft</span>
+              <span className="font-bold text-lg text-white">BuildCraft</span>
             </div>
             <p className="text-gray-400 text-sm">
               Votre partenaire de confiance pour tous vos projets de construction et rénovation.
