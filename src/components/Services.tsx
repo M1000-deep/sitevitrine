@@ -35,14 +35,15 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-gray-50">
+    <section id="services" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nos Services
+        <div className="text-center mb-20">
+          <span className="text-sm font-bold text-gray-600 uppercase tracking-widest">NOS PRESTATIONS</span>
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 mt-4">
+            Services Complets
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Expertise complète pour la conception, réalisation et suivi de vos projets.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+            Expertise complète pour la conception, réalisation et suivi de vos projets de construction.
           </p>
         </div>
 
@@ -50,11 +51,17 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-gray-900 hover:border-gray-700"
+              className="group relative bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-2xl hover:border-gray-200 transition-all duration-300 overflow-hidden"
             >
-              <div className="text-5xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <div className="mt-6 flex items-center text-gray-900 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  En savoir plus <span className="ml-2">→</span>
+                </div>
+              </div>
             </div>
           ))}
         </div>

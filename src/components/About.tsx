@@ -2,43 +2,56 @@
 
 export default function About() {
   const stats = [
-    { number: '150+', label: 'Projets Réalisés' },
-    { number: '25+', label: 'Ans d\'Expérience' },
-    { number: '500+', label: 'Clients Satisfaits' },
-    { number: '98%', label: 'Taux de Satisfaction' },
+    { number: '150+', label: 'Projets Réalisés', icon: '🏗️' },
+    { number: '25+', label: 'Ans d\'Expérience', icon: '⭐' },
+    { number: '500+', label: 'Clients Satisfaits', icon: '👥' },
+    { number: '98%', label: 'Taux de Satisfaction', icon: '✓' },
   ];
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-gray-50">
+    <section id="about" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Contenu Texte */}
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            <span className="text-sm font-bold text-gray-600 uppercase tracking-widest">À PROPOS</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 mt-4">
               Qui Sommes-Nous
             </h2>
-            <p className="text-gray-600 text-lg mb-4">
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed font-light">
               Depuis plus de 25 ans, BuildCraft construit la confiance à travers l'excellence. Leader du secteur, nous réalisons les projets les plus ambitieux avec professionnalisme et innovation.
             </p>
-            <p className="text-gray-600 text-lg mb-6">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed font-light">
               Chaque projet est une opportunité de démontrer notre expertise technique, notre maîtrise des délais et notre engagement qualité. Nous travaillons avec les meilleures pratiques industrie.
             </p>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="text-gray-900 font-bold text-xl">✓</span>
-                <span className="text-gray-700">Expertise reconnue dans tous les secteurs de construction</span>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <span className="text-2xl text-gray-900 font-black">✓</span>
+                <div>
+                  <div className="font-bold text-gray-900">Expertise Reconnue</div>
+                  <div className="text-gray-600 text-sm">Dans tous les secteurs de construction</div>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="text-gray-900 font-bold text-xl">✓</span>
-                <span className="text-gray-700">Respect rigoureux des délais et budgets</span>
+              <div className="flex items-start gap-4">
+                <span className="text-2xl text-gray-900 font-black">✓</span>
+                <div>
+                  <div className="font-bold text-gray-900">Respect des Délais</div>
+                  <div className="text-gray-600 text-sm">Rigoreux et professionnel</div>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="text-gray-900 font-bold text-xl">✓</span>
-                <span className="text-gray-700">Certification qualité ISO 9001</span>
+              <div className="flex items-start gap-4">
+                <span className="text-2xl text-gray-900 font-black">✓</span>
+                <div>
+                  <div className="font-bold text-gray-900">Certifications ISO 9001</div>
+                  <div className="text-gray-600 text-sm">Qualité garantie</div>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="text-gray-900 font-bold text-xl">✓</span>
-                <span className="text-gray-700">Engagement envers la durabilité environnementale</span>
+              <div className="flex items-start gap-4">
+                <span className="text-2xl text-gray-900 font-black">✓</span>
+                <div>
+                  <div className="font-bold text-gray-900">Durabilité</div>
+                  <div className="text-gray-600 text-sm">Engagement environnemental</div>
+                </div>
               </div>
             </div>
           </div>
@@ -48,9 +61,10 @@ export default function About() {
             {stats.map((stat, idx) => (
               <div
                 key={idx}
-                className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition border-t-4 border-gray-900"
+                className="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg hover:bg-white transition-all duration-300 border border-gray-100 group"
               >
-                <div className="text-4xl font-bold text-gray-900 mb-2">
+                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">{stat.icon}</div>
+                <div className="text-4xl font-black text-gray-900 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-semibold">
